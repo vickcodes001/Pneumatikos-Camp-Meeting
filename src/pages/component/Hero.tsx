@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/70 to-gray-900/90 z-10"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-gray-900/80 via-gray-900/70 to-gray-900/90 z-10"></div>
         <img
           src="images/hero-image.jpg"
           alt="Camp Meeting"
@@ -27,11 +27,11 @@ export default function Hero() {
 
           {/* Date + Location */}
           <div className="flex justify-center">
-            <div className="flex flex-col sm:flex-row sm:items-center divide-y sm:divide-y-0 sm:divide-x divide-white/30 rounded-2xl sm:rounded-full bg-amber-500 text-white shadow-lg overflow-hidden w-full max-w-2xl">
+            <div className="flex flex-col sm:flex-row sm:items-center divide-y sm:divide-y-0 sm:divide-x divide-white/30 rounded-2xl sm:rounded-full bg-amber-500 text-white shadow-lg overflow-hidden w-full max-w-3xl">
               {/* Date */}
               <div className="flex items-center justify-center gap-3 px-6 py-4 text-sm sm:text-base md:text-lg font-semibold text-center">
                 <svg
-                  className="w-5 h-5 flex-shrink-0"
+                  className="w-5 h-5 flex"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -47,9 +47,9 @@ export default function Hero() {
               </div>
 
               {/* Location */}
-              <div className="flex items-center justify-center gap-3 px-6 py-4 text-sm sm:text-base md:text-lg font-semibold text-center">
+              <div className="flex items-start md:items-center justify-center gap-2 px-6 py-4 text-sm sm:text-base md:text-lg font-semibold text-center">
                 <svg
-                  className="w-5 h-5 flex-shrink-0"
+                  className="w-5 h-5 flex"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -67,9 +67,7 @@ export default function Hero() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span className="leading-snug">
-                  Redemption Camping Ground, Ibadan Express Way
-                </span>
+                <span>Redemption Camping Ground, Ibadan Express Way</span>
               </div>
             </div>
           </div>

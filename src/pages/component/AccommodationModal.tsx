@@ -15,14 +15,14 @@ export default function AccommodationModal({
   const [showBankDetails, setShowBankDetails] = useState(false);
 
   const packages = [
-    {
-      id: "early" as const,
-      name: "Early Bird (Members Only)",
-      price: 13000,
-      description: "Grace Ambassadors & Gawom members who pay before March 15",
-      badge: "LIMITED TIME",
-      highlight: true,
-    },
+    // {
+    //   id: "early" as const,
+    //   name: "Early Bird (Members Only)",
+    //   price: 13000,
+    //   description: "Grace Ambassadors & Gawom members who pay before March 15",
+    //   badge: "LIMITED TIME",
+    //   highlight: true,
+    // },
     {
       id: "regular" as const,
       name: "Single (Standard)",
@@ -35,6 +35,7 @@ export default function AccommodationModal({
       price: 100000,
       description: "₦100,000 per room • Best value option",
       badge: "BEST VALUE",
+      highlight: true,
     },
   ];
 
@@ -75,12 +76,6 @@ export default function AccommodationModal({
         <div className="p-6">
           {!showBankDetails ? (
             <div className="space-y-4">
-              {/* Deadline Notice */}
-              <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-sm text-red-800">
-                Early Bird ₦13,000 ends March 15. After this date, rate is
-                ₦17,500.
-              </div>
-
               {packages.map((pkg) => (
                 <button
                   key={pkg.id}
@@ -93,18 +88,18 @@ export default function AccommodationModal({
                 >
                   <div className="flex justify-between">
                     <div>
-                      <h4 className="text-xl font-bold">{pkg.name}</h4>
+                      <h4 className="md:text-xl font-bold">{pkg.name}</h4>
                       <p className="text-sm text-gray-600">{pkg.description}</p>
                     </div>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-amber-600">
+                      <div className="md:text-2xl font-bold text-amber-600">
                         ₦{pkg.price.toLocaleString()}
                       </div>
-                      {pkg.badge && (
-                        <span className="inline-block mt-2 px-3 py-1 bg-amber-500 text-white text-xs rounded-full">
+                      {/* {pkg.badge && (
+                        <span className="inline-block mt-2 px-1 md:px-3 py-1 bg-amber-500 text-white text-xs rounded-full">
                           {pkg.badge}
                         </span>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </button>
