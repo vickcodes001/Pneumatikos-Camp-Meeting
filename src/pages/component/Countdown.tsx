@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function Countdown() {
-  const targetDate = new Date("2026-03-15T00:00:00").getTime();
+  const targetDate = new Date("2026-04-02T00:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -34,7 +34,7 @@ export default function Countdown() {
   }, [targetDate]);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-linear-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
           <div className="space-y-2">

@@ -33,8 +33,8 @@ export default function Registration({ onBookClick }: RegistrationProps) {
             Registration Process
           </h3>
 
-          <div className="grid md:grid-cols-3 gap-8 text-left">
-            <div className="space-y-3">
+          <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
+            <div className="space-y-3 items-center md:items-start flex flex-col">
               <div className="w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-xl">
                 1
               </div>
@@ -44,7 +44,7 @@ export default function Registration({ onBookClick }: RegistrationProps) {
               </p>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-3 items-center md:items-start flex flex-col">
               <div className="w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-xl">
                 2
               </div>
@@ -54,7 +54,7 @@ export default function Registration({ onBookClick }: RegistrationProps) {
               </p>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-3 items-center md:items-start flex flex-col">
               <div className="w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-xl">
                 3
               </div>

@@ -2,14 +2,12 @@ import { useState } from "react";
 
 export default function Gallery() {
   const images = [
-    "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2073",
-    "https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?q=80&w=2070",
-    "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=2070",
-    "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2070",
-    "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070",
-    "https://images.unsplash.com/photo-1509027572446-af8401acfdc3?q=80&w=2128",
-    "https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?q=80&w=2074",
-    "https://images.unsplash.com/photo-1502810365585-56ffa361fdde?q=80&w=2070",
+    "images/gallery-2.jpg",
+    "images/gallery-3.jpg",
+    "images/gallery-4.jpg",
+    "images/gallery-3.jpg",
+    "images/gallery-5.jpg",
+    "images/gallery-3.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +37,7 @@ export default function Gallery() {
         {/* Carousel */}
         <div className="relative">
           {/* Main Image */}
-          <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-2xl shadow-2xl">
+          <div className="relative h-100 md:h-125 overflow-hidden rounded-2xl shadow-2xl">
             <img
               src={images[currentIndex]}
               alt={`Gallery ${currentIndex + 1}`}
