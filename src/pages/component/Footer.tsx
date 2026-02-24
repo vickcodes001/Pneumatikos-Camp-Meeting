@@ -126,8 +126,8 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} Pneumatikos Church. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Grace Ambassadors World Outreach
+            Ministries. All rights reserved.
           </p>
         </div>
       </div>
