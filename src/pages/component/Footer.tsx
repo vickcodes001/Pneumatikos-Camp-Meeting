@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-[1440px] mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Church Info */}
           <div className="space-y-4">
@@ -35,7 +35,7 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <svg
-                  className="w-5 h-5"
+                  className="w-7 h-7"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -47,7 +47,7 @@ export default function Footer() {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span>info@pneumatikos.org</span>
+                <span>gawom.pneumatikoscampmeeting@gmail.com</span>
               </p>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function Footer() {
             <h4 className="text-lg font-bold text-white">Follow Us</h4>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href="https://web.facebook.com/GraceambassadorsNigeria"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-amber-500 rounded-full flex items-center justify-center transition-colors"
@@ -73,7 +73,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/graceambassadorrs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-amber-500 rounded-full flex items-center justify-center transition-colors"
@@ -88,7 +88,7 @@ export default function Footer() {
                 </svg>
               </a>
 
-              <a
+              {/* <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -118,7 +118,7 @@ export default function Footer() {
                 >
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

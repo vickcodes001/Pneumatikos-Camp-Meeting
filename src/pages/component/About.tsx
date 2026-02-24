@@ -10,8 +10,8 @@ export default function About() {
           <p>
             The Pneumatikos Camp Meeting is an annual gathering of believers
             seeking a deeper relationship with God through worship, fellowship,
-            and powerful teaching from His Word. This three-day spiritual
-            retreat is designed to refresh your spirit and ignite your faith.
+            and powerful teaching from His Word. This four-day spiritual retreat
+            is designed to refresh your spirit and ignite your faith.
           </p>
 
           <p>

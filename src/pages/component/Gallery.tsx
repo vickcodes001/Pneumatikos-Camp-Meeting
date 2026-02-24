@@ -2,12 +2,32 @@ import { useState } from "react";
 
 export default function Gallery() {
   const images = [
+    // "images/gallery-1.jpg",
     "images/gallery-2.jpg",
     "images/gallery-3.jpg",
-    "images/gallery-4.jpg",
-    "images/gallery-3.jpg",
+    "images/gallery-4.jpeg",
     "images/gallery-5.jpg",
-    "images/gallery-3.jpg",
+    "images/gallery-6.jpeg",
+    "images/gallery-7.jpeg",
+    "images/gallery-8.jpeg",
+    "images/gallery-9.jpeg",
+    "images/gallery-10.jpeg",
+    "images/gallery-11.jpeg",
+    "images/gallery-12.jpeg",
+    // "images/gallery-13.jpeg",
+    "images/gallery-14.jpeg",
+    "images/gallery-15.jpeg",
+    "images/gallery-16.jpeg",
+    "images/gallery-17.jpeg",
+    "images/gallery-18.jpeg",
+    // "images/gallery-19.jpeg",
+    "images/gallery-20.jpeg",
+    "images/gallery-21.jpeg",
+    "images/gallery-22.jpeg",
+    "images/gallery-23.jpeg",
+    "images/gallery-24.jpeg",
+    "images/gallery-25.jpeg",
+    "images/gallery-26.jpeg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
