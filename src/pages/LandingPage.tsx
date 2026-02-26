@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      <NavBar onRegisterClick={() => setIsModalOpen(true)} />
-      <Hero />
+      <NavBar />
+      <Hero onRegisterClick={() => setIsModalOpen(true)} />
       <Countdown />
       <About />
       <FAQ />

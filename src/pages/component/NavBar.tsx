@@ -1,16 +1,10 @@
-import { useState } from "react";
-
-interface HeroProps {
-  onRegisterClick: () => void;
-}
-
 const navLinks = [{ id: 1, label: "About Us", href: "#about" }];
 
-const NavBar = ({ onRegisterClick }: HeroProps) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const NavBar = () => {
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const closeMenu = () => setIsMenuOpen(false);
+  // const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  // const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <div className="relative">
@@ -19,7 +13,7 @@ const NavBar = ({ onRegisterClick }: HeroProps) => {
         <div className="flex items-center justify-between px-4 md:px-6 py-3 md:py-4">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 min-w-0">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden flex-shrink-0">
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden shrink-0">
               <img
                 src="images/logo.png"
                 alt="Logo"
@@ -28,7 +22,7 @@ const NavBar = ({ onRegisterClick }: HeroProps) => {
             </div>
 
             {/* Prevent text overflow */}
-            <span className="text-sm md:text-base font-semibold text-gray-900 truncate max-w-[160px] sm:max-w-xs md:max-w-none">
+            <span className="text-sm md:text-base font-semibold text-gray-900 md:max-w-none">
               GRACE AMBASSADORS WORLD OUTREACH MINISTRIES
             </span>
           </a>
@@ -44,17 +38,10 @@ const NavBar = ({ onRegisterClick }: HeroProps) => {
                 {link.label}
               </a>
             ))}
-
-            <button
-              onClick={onRegisterClick}
-              className="px-6 py-2.5 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition"
-            >
-              REGISTER NOW
-            </button>
           </div>
 
           {/* Mobile Hamburger */}
-          <button
+          {/* <button
             onClick={toggleMenu}
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition"
             aria-label="Toggle menu"
@@ -72,25 +59,21 @@ const NavBar = ({ onRegisterClick }: HeroProps) => {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
       </nav>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <>
-          {/* Backdrop */}
           <div
             className="fixed inset-0 bg-black/50 z-40 md:hidden"
             onClick={closeMenu}
           />
 
-          {/* Slide Down Panel */}
           <div className="fixed top-20 left-1/2 -translate-x-1/2 w-[92%] max-w-md bg-white rounded-2xl shadow-2xl z-50 md:hidden transition-all duration-300">
             <div className="p-6">
-              {/* Header */}
               <div className="flex items-center justify-between mb-8">
-                {/* Links */}
                 <nav className="space-y-6">
                   {navLinks.map((link) => (
                     <a
@@ -136,7 +119,7 @@ const NavBar = ({ onRegisterClick }: HeroProps) => {
             </div>
           </div>
         </>
-      )}
+      )} */}
     </div>
   );
 };

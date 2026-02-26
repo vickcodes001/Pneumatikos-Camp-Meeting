@@ -1,4 +1,13 @@
-export default function Hero() {
+// import { useState } from "react";
+
+interface HeroProps {
+  onRegisterClick: () => void;
+}
+
+export default function Hero({ onRegisterClick }: HeroProps) {
+  // const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  // const closeMenu = () => setIsMenuOpen(false)
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Background */}
@@ -47,7 +56,7 @@ export default function Hero() {
               </div>
 
               {/* Location */}
-              <div className="flex items-start md:items-center justify-center gap-2 px-6 py-4 text-sm sm:text-base md:text-lg font-semibold text-center">
+              <div className="flex items-start md:items-center justify-center gap-1 md:gap-2 px-6 py-4 text-sm sm:text-base md:text-lg font-semibold text-center">
                 <svg
                   className="w-5 h-5 flex"
                   fill="none"
@@ -71,6 +80,16 @@ export default function Hero() {
               </div>
             </div>
           </div>
+
+          <button
+            onClick={() => {
+              onRegisterClick();
+              // closeMenu();
+            }}
+            className="text-xl mt-4 px-5 py-3 bg-amber-500 text-white font-bold rounded-lg hover:bg-amber-600 transition"
+          >
+            REGISTER NOW
+          </button>
         </div>
       </div>
 
